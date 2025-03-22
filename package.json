@@ -1,0 +1,40 @@
+{
+  "name": "node-auth-template",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "src/server/index.ts",
+  "scripts": {
+    "build": "npm install",
+    "build:dist": "tsc",
+    "build:bin": "",
+    "start": "tsc && node dist/server/index.js",
+    "lint": "eslint",
+    "format": "prettier --write 'src/**/*.{js,ts}'"
+  },
+  "author": "PunishedHideo",
+  "license": "MIT",
+  "devDependencies": {
+    "@eslint/js": "^9.21.0",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.13.10",
+    "eslint": "^9.21.0",
+    "globals": "^16.0.0",
+    "nodemon": "^3.1.9",
+    "prettier": "^3.5.3",
+    "ts-node": "^10.9.2",
+    "tsc": "^2.0.4",
+    "typescript": "^5.8.2",
+    "typescript-eslint": "^8.26.0"
+  },
+  "dependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/cors": "^2.8.17",
+    "@types/uuid": "^10.0.0",
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "mongodb": "^6.15.0",
+    "uuid": "^11.1.0"
+  }
+}
